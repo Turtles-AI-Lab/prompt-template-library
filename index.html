@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free AI prompt templates library. Battle-tested prompts for ChatGPT, Claude, and other LLMs. Categories: Business, Customer Service, Marketing, Sales, Coding, Content Creation.">
+    <meta name="keywords" content="AI prompts, ChatGPT prompts, Claude prompts, prompt templates, prompt engineering, AI templates, LLM prompts">
+    <title>AI Prompt Template Library | Free ChatGPT & Claude Prompts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🎯 AI Prompt Template Library</h1>
+        <p class="subtitle">Battle-tested prompts for ChatGPT, Claude, and other LLMs</p>
+        <div class="header-stats">
+            <span class="stat"><strong id="totalPrompts">0</strong> Prompts</span>
+            <span class="stat"><strong id="totalCategories">0</strong> Categories</span>
+        </div>
+        <div class="header-links">
+            <a href="https://github.com/Turtles-AI-Lab/prompt-template-library" class="github-link" target="_blank">⭐ Star on GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search & Filter -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search prompts by keyword, category, or use case...">
+            </div>
+
+            <div class="filter-container">
+                <label>Filter by Category:</label>
+                <div id="categoryFilters" class="filter-buttons"></div>
+            </div>
+        </section>
+
+        <!-- Prompts Display -->
+        <section class="prompts-section">
+            <div id="promptsContainer" class="prompts-grid"></div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>😔 No prompts found</h3>
+                <p>Try adjusting your search or filters</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>💡 About This Library</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>✅ Battle-Tested</h3>
+                    <p>Every prompt has been tested with multiple AI models</p>
+                </div>
+                <div class="about-card">
+                    <h3>📋 Copy-Ready</h3>
+                    <p>One-click copy to clipboard for instant use</p>
+                </div>
+                <div class="about-card">
+                    <h3>🔄 Regularly Updated</h3>
+                    <p>New prompts added weekly based on community feedback</p>
+                </div>
+                <div class="about-card">
+                    <h3>🆓 100% Free</h3>
+                    <p>Open source and free to use forever</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="guide-section">
+            <h2>📚 How to Use These Prompts</h2>
+            <ol class="guide-list">
+                <li><strong>Browse or Search:</strong> Find a prompt that matches your need</li>
+                <li><strong>Customize:</strong> Replace placeholders like <code>[TOPIC]</code> with your specific information</li>
+                <li><strong>Copy:</strong> Click the copy button to copy the prompt</li>
+                <li><strong>Paste:</strong> Use in ChatGPT, Claude, or any other AI</li>
+                <li><strong>Iterate:</strong> Refine the output by providing more context if needed</li>
+            </ol>
+        </section>
+
+        <!-- Related Tools -->
+        <section class="related-tools">
+            <h2>🛠️ Related Tools</h2>
+            <div class="tools-grid">
+                <a href="https://github.com/Turtles-AI-Lab/email-to-ticket-parser" class="tool-card" target="_blank">
+                    <h3>📧 Email-to-Ticket Parser</h3>
+                    <p>Extract ticket info from support emails</p>
+                </a>
+                <a href="https://github.com/Turtles-AI-Lab/ai-ticket-classifier" class="tool-card" target="_blank">
+                    <h3>🎯 AI Ticket Classifier</h3>
+                    <p>Python library for ticket classification</p>
+                </a>
+                <a href="https://github.com/Turtles-AI-Lab/llm-cost-calculator" class="tool-card" target="_blank">
+                    <h3>💰 LLM Cost Calculator</h3>
+                    <p>Compare AI API costs across providers</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by <a href="https://github.com/Turtles-AI-Lab" target="_blank">Turtles AI Lab</a></p>
+        <p>Free & Open Source | <a href="mailto:jgreenia@jandraisolutions.com">Submit Your Prompts</a></p>
+        <p class="badge-container">
+            <img src="https://komarev.com/ghpvc/?username=prompt-template-library&color=blue&style=flat-square&label=Visitors" alt="Visitor count">
+        </p>
+    </footer>
+
+    <!-- Prompt Detail Modal -->
+    <div id="promptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-meta">
+                <span class="badge" id="modalCategory"></span>
+                <span class="badge" id="modalDifficulty"></span>
+            </div>
+            <p id="modalDescription"></p>
+            <div class="prompt-box">
+                <pre id="modalPrompt"></pre>
+                <button id="modalCopyBtn" class="copy-btn">📋 Copy Prompt</button>
+            </div>
+            <div id="modalExample" class="example-box"></div>
+        </div>
+    </div>
+
+    <script src="data/prompts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
