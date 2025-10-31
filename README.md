@@ -1,5 +1,13 @@
 # 🎯 AI Prompt Template Library
 
+
+![GitHub stars](https://img.shields.io/github/stars/Turtles-AI-Lab/prompt-template-library?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Turtles-AI-Lab/prompt-template-library?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Turtles-AI-Lab/prompt-template-library)
+![GitHub license](https://img.shields.io/github/license/Turtles-AI-Lab/prompt-template-library)
+![GitHub last commit](https://img.shields.io/github/last-commit/Turtles-AI-Lab/prompt-template-library)
+
+
 **Free, battle-tested AI prompt templates for ChatGPT, Claude, and other LLMs.**
 
 [![Visitors](https://komarev.com/ghpvc/?username=prompt-template-library&color=blue&style=flat-square&label=Visitors)](https://github.com/Turtles-AI-Lab/prompt-template-library)
